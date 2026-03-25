@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – PetAlert</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #222;
+      background: #fafafa;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .logo-icon {
+      width: 52px; height: 52px;
+      background: #e02020;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px;
+    }
+    .logo-text { font-size: 26px; font-weight: 700; color: #e02020; }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+    .subtitle { color: #666; font-size: 14px; margin-bottom: 40px; }
+    .lang-switch {
+      display: flex; gap: 8px; margin-bottom: 32px;
+    }
+    .lang-btn {
+      padding: 6px 16px;
+      border: 1.5px solid #e02020;
+      border-radius: 20px;
+      background: none;
+      color: #e02020;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .lang-btn.active { background: #e02020; color: #fff; }
+    section { margin-bottom: 36px; }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #e02020;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #f0c0c0;
+    }
+    p { margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+    .highlight {
+      background: #fff5f5;
+      border-left: 3px solid #e02020;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 12px;
+    }
+    .contact-card {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 8px;
+    }
+    .contact-card strong { display: block; font-size: 16px; margin-bottom: 4px; }
+    a { color: #e02020; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .updated { color: #888; font-size: 13px; margin-top: 40px; text-align: center; }
+    .lang-section { display: none; }
+    .lang-section.visible { display: block; }
+    .divider {
+      border: none;
+      border-top: 2px dashed #ddd;
+      margin: 48px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="logo">
+    <div class="logo-icon">🐾</div>
+    <span class="logo-text">PetAlert</span>
+  </div>
+
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="showLang('it', this)">🇮🇹 Italiano</button>
+    <button class="lang-btn" onclick="showLang('en', this)">🇬🇧 English</button>
+  </div>
+
+  <!-- ==================== ITALIANO ==================== -->
+  <div id="lang-it" class="lang-section visible">
+
+    <h1>Informativa sulla Privacy</h1>
+    <p class="subtitle">Ultimo aggiornamento: marzo 2026</p>
+
+    <section>
+      <h2>1. Titolare del trattamento</h2>
+      <div class="contact-card">
+        <strong>Mauro Pavia</strong>
+        Sviluppatore indipendente<br>
+        Email: <a href="mailto:paviamauro99@gmail.com">paviamauro99@gmail.com</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Cos'è PetAlert</h2>
+      <p>PetAlert è un'applicazione mobile che consente agli utenti di segnalare animali smarriti o trovati, visualizzare segnalazioni sulla mappa, comunicare con altri utenti e ricevere notifiche in base alla propria posizione geografica.</p>
+    </section>
+
+    <section>
+      <h2>3. Dati raccolti</h2>
+      <p>L'app raccoglie le seguenti categorie di dati:</p>
+
+      <p><strong>Dati forniti direttamente dall'utente:</strong></p>
+      <ul>
+        <li>Indirizzo email e nome visualizzato (per la registrazione e l'accesso)</li>
+        <li>Foto del profilo (opzionale)</li>
+        <li>Foto degli animali caricate nelle segnalazioni</li>
+        <li>Descrizioni, note e informazioni sugli animali smarriti/trovati</li>
+        <li>Messaggi inviati tramite la chat interna</li>
+      </ul>
+
+      <p><strong>Dati raccolti automaticamente:</strong></p>
+      <ul>
+        <li>Posizione geografica del dispositivo (richiesta esplicitamente, usata per la mappa e le notifiche di prossimità)</li>
+        <li>Token FCM per l'invio di notifiche push</li>
+        <li>Dati di utilizzo anonimi tramite Google AdMob (pubblicità)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Finalità del trattamento</h2>
+      <ul>
+        <li><strong>Erogazione del servizio:</strong> visualizzare segnalazioni, gestire account, inviare messaggi</li>
+        <li><strong>Notifiche push:</strong> avvisarti di nuove segnalazioni nella tua area geografica</li>
+        <li><strong>Pubblicità:</strong> mostrare annunci tramite Google AdMob per sostenere il servizio gratuito</li>
+        <li><strong>Sicurezza:</strong> prevenire abusi e garantire l'integrità della piattaforma</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Base giuridica (GDPR)</h2>
+      <ul>
+        <li><strong>Esecuzione del contratto</strong> (Art. 6(1)(b)): per fornire le funzionalità dell'app agli utenti registrati</li>
+        <li><strong>Consenso</strong> (Art. 6(1)(a)): per l'accesso alla posizione e per le notifiche push</li>
+        <li><strong>Legittimo interesse</strong> (Art. 6(1)(f)): per la sicurezza della piattaforma e la pubblicità contestuale</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Servizi di terze parti</h2>
+      <p>L'app utilizza i seguenti servizi di terze parti, ciascuno con la propria privacy policy:</p>
+      <ul>
+        <li><strong>Google Firebase</strong> (Authentication, Firestore, Storage, Cloud Messaging) – <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a></li>
+        <li><strong>Google Maps Platform</strong> – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+        <li><strong>Google AdMob</strong> – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+      </ul>
+      <div class="highlight">
+        I dati sono archiviati su server Google (Firebase) situati nell'Unione Europea o negli Stati Uniti. Il trasferimento negli USA avviene in conformità alle clausole contrattuali standard (SCC) approvate dalla Commissione Europea.
+      </div>
+    </section>
+
+    <section>
+      <h2>7. Conservazione dei dati</h2>
+      <ul>
+        <li><strong>Account utente:</strong> conservato finché l'account è attivo. L'utente può richiederne la cancellazione in qualsiasi momento.</li>
+        <li><strong>Segnalazioni:</strong> conservate finché l'utente non le elimina o chiude l'annuncio.</li>
+        <li><strong>Messaggi:</strong> conservati finché l'utente non elimina la conversazione.</li>
+        <li><strong>Posizione:</strong> aggiornata a ogni sessione, non conservata storicamente.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Diritti dell'utente (GDPR)</h2>
+      <p>In qualità di interessato, hai diritto a:</p>
+      <ul>
+        <li><strong>Accesso</strong>: ottenere copia dei tuoi dati personali</li>
+        <li><strong>Rettifica</strong>: correggere dati inesatti</li>
+        <li><strong>Cancellazione</strong>: richiedere l'eliminazione dei tuoi dati ("diritto all'oblio")</li>
+        <li><strong>Portabilità</strong>: ricevere i dati in formato strutturato</li>
+        <li><strong>Opposizione</strong>: opporti al trattamento per finalità pubblicitarie</li>
+        <li><strong>Revoca del consenso</strong>: in qualsiasi momento, senza pregiudicare la liceità del trattamento precedente</li>
+      </ul>
+      <p>Per esercitare questi diritti, scrivi a <a href="mailto:paviamauro99@gmail.com">paviamauro99@gmail.com</a>. Risponderemo entro 30 giorni.</p>
+    </section>
+
+    <section>
+      <h2>9. Minori</h2>
+      <p>PetAlert non è destinata a utenti di età inferiore ai 13 anni. Non raccogliamo consapevolmente dati personali di minori. Se sei genitore o tutore e ritieni che tuo figlio ci abbia fornito dati personali, contattaci per richiederne la cancellazione.</p>
+    </section>
+
+    <section>
+      <h2>10. Sicurezza</h2>
+      <p>I dati sono protetti tramite le misure di sicurezza di Google Firebase, incluse autenticazione, regole di accesso Firestore e trasmissione cifrata (HTTPS/TLS). Adottiamo misure organizzative e tecniche adeguate per proteggere i tuoi dati da accessi non autorizzati.</p>
+    </section>
+
+    <section>
+      <h2>11. Modifiche alla presente informativa</h2>
+      <p>Ci riserviamo il diritto di aggiornare questa informativa. In caso di modifiche sostanziali, gli utenti registrati saranno notificati tramite l'app. La versione aggiornata sarà sempre disponibile a questo indirizzo.</p>
+    </section>
+
+    <section>
+      <h2>12. Contatti</h2>
+      <div class="contact-card">
+        <strong>Mauro Pavia – Sviluppatore PetAlert</strong>
+        Email: <a href="mailto:paviamauro99@gmail.com">paviamauro99@gmail.com</a>
+      </div>
+    </section>
+
+  </div><!-- /lang-it -->
+
+  <hr class="divider">
+
+  <!-- ==================== ENGLISH ==================== -->
+  <div id="lang-en" class="lang-section">
+
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Last updated: March 2026</p>
+
+    <section>
+      <h2>1. Data Controller</h2>
+      <div class="contact-card">
+        <strong>Mauro Pavia</strong>
+        Independent Developer<br>
+        Email: <a href="mailto:paviamauro99@gmail.com">paviamauro99@gmail.com</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. About PetAlert</h2>
+      <p>PetAlert is a mobile application that allows users to report lost or found animals, view reports on a map, communicate with other users, and receive location-based notifications.</p>
+    </section>
+
+    <section>
+      <h2>3. Data We Collect</h2>
+      <p><strong>Data you provide directly:</strong></p>
+      <ul>
+        <li>Email address and display name (for registration and login)</li>
+        <li>Profile photo (optional)</li>
+        <li>Photos of animals uploaded in reports</li>
+        <li>Descriptions, notes, and information about lost/found animals</li>
+        <li>Messages sent through the in-app chat</li>
+      </ul>
+
+      <p><strong>Automatically collected data:</strong></p>
+      <ul>
+        <li>Device location (requested explicitly, used for map and proximity notifications)</li>
+        <li>FCM token for push notifications</li>
+        <li>Anonymous usage data via Google AdMob (advertising)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. How We Use Your Data</h2>
+      <ul>
+        <li><strong>Service delivery:</strong> display reports, manage accounts, send messages</li>
+        <li><strong>Push notifications:</strong> alert you about new reports in your area</li>
+        <li><strong>Advertising:</strong> display ads via Google AdMob to support the free service</li>
+        <li><strong>Security:</strong> prevent abuse and ensure platform integrity</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Legal Basis (GDPR)</h2>
+      <ul>
+        <li><strong>Performance of a contract</strong> (Art. 6(1)(b)): to provide app features to registered users</li>
+        <li><strong>Consent</strong> (Art. 6(1)(a)): for location access and push notifications</li>
+        <li><strong>Legitimate interest</strong> (Art. 6(1)(f)): for platform security and contextual advertising</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Third-Party Services</h2>
+      <p>The app uses the following third-party services, each with their own privacy policy:</p>
+      <ul>
+        <li><strong>Google Firebase</strong> (Authentication, Firestore, Storage, Cloud Messaging) – <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a></li>
+        <li><strong>Google Maps Platform</strong> – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+        <li><strong>Google AdMob</strong> – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+      </ul>
+      <div class="highlight">
+        Data is stored on Google (Firebase) servers located in the European Union or the United States. Transfers to the US are made in accordance with Standard Contractual Clauses (SCC) approved by the European Commission.
+      </div>
+    </section>
+
+    <section>
+      <h2>7. Data Retention</h2>
+      <ul>
+        <li><strong>User accounts:</strong> retained while the account is active. Users can request deletion at any time.</li>
+        <li><strong>Reports:</strong> retained until the user deletes them or closes the listing.</li>
+        <li><strong>Messages:</strong> retained until the user deletes the conversation.</li>
+        <li><strong>Location:</strong> updated each session, not retained historically.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Your Rights (GDPR)</h2>
+      <p>As a data subject, you have the right to:</p>
+      <ul>
+        <li><strong>Access:</strong> obtain a copy of your personal data</li>
+        <li><strong>Rectification:</strong> correct inaccurate data</li>
+        <li><strong>Erasure:</strong> request deletion of your data ("right to be forgotten")</li>
+        <li><strong>Portability:</strong> receive your data in a structured format</li>
+        <li><strong>Objection:</strong> object to processing for advertising purposes</li>
+        <li><strong>Withdrawal of consent:</strong> at any time, without affecting the lawfulness of prior processing</li>
+      </ul>
+      <p>To exercise these rights, email <a href="mailto:paviamauro99@gmail.com">paviamauro99@gmail.com</a>. We will respond within 30 days.</p>
+    </section>
+
+    <section>
+      <h2>9. Children's Privacy</h2>
+      <p>PetAlert is not intended for users under the age of 13. We do not knowingly collect personal data from children. If you are a parent or guardian and believe your child has provided us with personal data, please contact us to request its deletion.</p>
+    </section>
+
+    <section>
+      <h2>10. Security</h2>
+      <p>Data is protected through Google Firebase security measures, including authentication, Firestore access rules, and encrypted transmission (HTTPS/TLS). We implement appropriate technical and organizational measures to protect your data from unauthorized access.</p>
+    </section>
+
+    <section>
+      <h2>11. Changes to This Policy</h2>
+      <p>We reserve the right to update this policy. In the event of material changes, registered users will be notified through the app. The updated version will always be available at this address.</p>
+    </section>
+
+    <section>
+      <h2>12. Contact</h2>
+      <div class="contact-card">
+        <strong>Mauro Pavia – PetAlert Developer</strong>
+        Email: <a href="mailto:paviamauro99@gmail.com">paviamauro99@gmail.com</a>
+      </div>
+    </section>
+
+  </div><!-- /lang-en -->
+
+  <p class="updated">PetAlert &copy; 2026 – Mauro Pavia</p>
+
+</div>
+
+<script>
+  function showLang(lang, btn) {
+    document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('visible'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('visible');
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>
